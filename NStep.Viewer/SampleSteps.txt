@@ -1,18 +1,18 @@
-﻿21/05/2012 20:43:55.3501 92516 overall application startup
-21/05/2012 20:44:03.9491 42580 onstartup()
-21/05/2012 20:44:21.7871 24740 initializemodules
-21/05/2012 20:44:27.6181 461 infrastructuremodule.initializemodules
-21/05/2012 20:44:28.0881 2336 connectivitymodule.initializemodules
-21/05/2012 20:44:30.4301 360 userpreferencesmodule.initializemodules
-21/05/2012 20:44:30.7981 2058 shellmodule.initializemodules
-21/05/2012 20:44:32.8661 69 modulesinfrastaructuremodule.initializemodules
-21/05/2012 20:44:35.1061 152 pricingfxmodule.initializemodules
-21/05/2012 20:44:35.6661 258 forwardsmodule.initializemodules
-21/05/2012 20:44:35.9691 2322 initializemodules.tradelogmodule
-21/05/2012 20:44:38.3091 35 orderssimulatormodule.initializemodules
-21/05/2012 20:44:38.4931 8034 applicationstart()
-21/05/2012 20:44:46.5381 11092 asyncloadmodules()
-21/05/2012 20:44:57.5481 938 loadlayout
-21/05/2012 20:44:46.5701 7123 transport login
-21/05/2012 20:44:58.4341 41481 loaddashboard
-21/05/2012 20:45:03.3721 7674 viewutilities
+﻿21/05/2012 20:43:55.3501	92516	overall application startup
+21/05/2012 20:44:03.9491	42580	onstartup()
+21/05/2012 20:44:21.7871	24740	initializemodules
+21/05/2012 20:44:27.6181	461	infrastructuremodule.initializemodules
+21/05/2012 20:44:28.0881	2336	connectivitymodule.initializemodules
+21/05/2012 20:44:30.4301	360	userpreferencesmodule.initializemodules
+21/05/2012 20:44:30.7981	2058	shellmodule.initializemodules
+21/05/2012 20:44:32.8661	69	modulesinfrastaructuremodule.initializemodules
+21/05/2012 20:44:35.1061	152	pricingfxmodule.initializemodules
+21/05/2012 20:44:35.6661	258	forwardsmodule.initializemodules
+21/05/2012 20:44:35.9691	2322	initializemodules.tradelogmodule
+21/05/2012 20:44:38.3091	35	orderssimulatormodule.initializemodules
+21/05/2012 20:44:38.4931	8034	applicationstart()
+21/05/2012 20:44:46.5381	11092	asyncloadmodules()
+21/05/2012 20:44:57.5481	938	loadlayout
+21/05/2012 20:44:46.5701	7123	transport login
+21/05/2012 20:44:58.4341	41481	loaddashboard
+21/05/2012 20:45:03.3721	7674	viewutilities

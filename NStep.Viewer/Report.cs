@@ -1,7 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Globalization;
-using System.IO;
 using System.Linq;
 
 namespace NStep.Viewer
@@ -16,6 +14,7 @@ namespace NStep.Viewer
             Start = stepsByTimestamp.Min(s => s.Timestamp);
             End = stepsByTimestamp.Max(s => s.End);
             TotalDurationMilli = (End - Start).TotalMilliseconds;
+            StepsCount = stepsByTimestamp.Count;
 
             for (int i = 0; i < stepsByTimestamp.Count; i++)
             {
@@ -23,27 +22,17 @@ namespace NStep.Viewer
                 var ranking = stepsByDuration.IndexOf(step);
 
                 step.Ranking = ranking;
+                step.Index = i;
+                step.Percent = step.DurationMilli/TotalDurationMilli;
             }
+
+            Steps = stepsByTimestamp;
         }
 
+        public IEnumerable<Step> Steps { get; private set; }
         public DateTime Start { get; private set; }
         public DateTime End { get; private set; }
         public double TotalDurationMilli { get; private set; }
-    }
-
-    public class ReportBuilded
-    {
-        public static Report LoadFromFile(string filePath)
-        {
-            var steps = from line in File.ReadAllLines(filePath)
-                        where line.Trim() != string.Empty
-                        let split = line.Split('\t')
-                        let timestamp = DateTime.Parse(split[0].Trim(), CultureInfo.InvariantCulture)
-                        let duration = int.Parse(split[1].Trim())
-                        let name = split[2].Trim()
-                        select new Step(name, timestamp, duration);
-
-            
-        } 
+        public int StepsCount { get; private set; }
     }
 }

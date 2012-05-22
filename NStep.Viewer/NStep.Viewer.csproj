@@ -58,7 +58,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="InstrumentationReport.cs" />
+    <Compile Include="Report.cs" />
+    <Compile Include="ReportBuilder.cs" />
+    <Compile Include="Severity.cs" />
     <Compile Include="Step.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
